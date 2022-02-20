@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Gaming Gear Website{% endblock %}</title>
+    {% block css %}
+    <link rel="stylesheet" href="{{asset('Front/main.css')}} ">
+    <link rel="stylesheet" href="{{asset('https://unicons.iconscout.com/release/v4.0.0/css/line.css')}} ">
+    <link rel="stylesheet" href="{{asset('Front/swiper-bundle.min.css')}}">
+    {% endblock %}
+</head>
+<body>
+    {% block body %}
+    <!-- ========================= Header Section -->
+    <header class="header " id="header">
+        <div class="logoDiv">
+           <a href="#home"> <i class="uil uil-pagerduty icon logoIcon"></i></a>
+        </div>
+        <div class="navBar" id="navBar">
+            <ul class="navLists">
+                <li class="navItem"><a href="#browser" class="navLink">Gears</a></li>
+                <li class="navItem"><a href="#features" class="navLink">Features</a></li>
+                <li class="navItem"><a href="#newgear" class="navLink">New Arrival</a></li>
+                <li class="navItem"><a href="#test" class="navLink">ProGammers</a></li>
+                <li class="navItem"><a href="blog" class="navLink">Our Blog</a></li>
+                <li class="navItem"><a href="event" class="navLink">Our Event</a></li>
+            </ul>
+           <div class="closeIconDiv" id="closeIcon">
+            <i class="uil uil-times-circle icon closeIcon"></i>
+           </div>
+        </div>
+        <div class="toggleIconDiv" id="toggleIcon">
+            <i class="uil uil-ellipsis-h icon"></i>
+        </div>
+        <div class="accCart">
+            <div class="accDiv">
+                <i class="uil uil-user-circle icon  userIcon"></i>
+                <div class="plainName">TheAces</div>
+             
+            </div>
+            <div class="cartDiv" id="cartIcon">
+                <i class="uil uil-shopping-bag icon" ></i>
+            </div>
+
+            <div class="themeIconDiv" id="themeIconDiv">
+                <i class="uil uil-sun icon"></i>
+            </div>
+        </div>
+    </header>
+    
+<!-- ==================Main Section------============================== -->
+    {% block content %}
+    <div class="main" id="home">
+
+        <div class="bannerOne swiper">
+            <div class="swiper-wrapper ">
+                <div class="bannerContent grid swiper-slide">
+                    <h1 class="overlayText">Mouse</h1>
+                    <div class="mainTextDiv">
+                        <div>
+                            <h1 class="mainTitle">Mouse - <br> Steelseries <br>Sensei 310</h1>
+                        </div>
+
+                       <div>
+                        <div class="price">
+                            <span class="previous">$999</span>
+                            <span class="current">$470</span>
+                        </div>
+
+                        <div class="cartButton">
+                            <i class="uil uil-plus-circle icon"></i>
+                            <span>Add To Cart</span>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="bannerImageDiv">
+                        <img src="{{asset('Front/Images/mouse2.png')}}" alt="Mouse image">
+                    </div>
+                </div>
+                <div class="bannerContent grid swiper-slide">
+                    <!-- <h1 class="overlayText">Computer</h1> -->
+                    <div class="mainTextDiv">
+                        <div>
+                            <h1 class="mainTitle">Beats Studio3 <br>Wireless <br> Midnight Black</h1>
+                        </div>
+
+                        <div>
+                            <div class="price">
+                                <span class="previous">$500</span>
+                                <span class="current">$245</span>
+                            </div>
+    
+                            <div class="cartButton">
+                                <i class="uil uil-plus-circle icon"></i>
+                                <span>Add To Cart</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bannerImageDiv">
+                        <img src="{{asset('Front/Images/beats.png')}}"" alt="Mouse image">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- =======================browser Section=========================== -->
+
+    <div class="browser section container" id="browser">
+        <div class="ItemCard grid browserOne ">
+            <div class="cardText">
+                <div class="cardPrice">
+                    <small>Starting from ...</small>
+                    <span class="price">$ 29</span>
+                </div>
+                <div class="itemNameDiv">
+                    <span class="name">Mice</span>
+                    <div class="cartButton">
+                        <i class="uil uil-minus-circle icon"></i>
+                        <span>Browse</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="itemImage">
+                <img src="{{asset('Front/Images/mouse.png')}}" alt="Mice Image" >
+            </div>
+        </div>
+        <div class="ItemCard grid browserFour ">
+            <div class="cardText">
+                <div class="cardPrice">
+                    <small>Starting from ...</small>
+                    <span class="price">$ 1,400</span>
+                </div>
+                <div class="itemNameDiv">
+                    <span class="name">Curved Monitor</span>
+                    <div class="cartButton">
+                        <i class="uil uil-minus-circle icon"></i>
+                        <span>Browse</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="itemImage">
+                <img src="{{asset('Front/Images/tv.png')}}" alt="Mice Image" >
+            </div>
+        </div>
+        <div class="ItemCard grid browserTwo ">
+            <div class="cardText">
+                <div class="cardPrice">
+                    <small>Starting from ...</small>
+                    <span class="price">$ 546</span>
+                </div>
+                <div class="itemNameDiv">
+                    <span class="name">Turturus v6</span>
+                    <div class="cartButton">
+                        <i class="uil uil-minus-circle icon"></i>
+                        <span>Browse</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="itemImage">
+                <img src="{{asset('Front/Images/turturus v6.png')}}" alt="Mice Image" >
+            </div>
+        </div>
+        <div class="ItemCard grid browserThree ">
+            <div class="cardText">
+                <div class="cardPrice">
+                    <small>Starting from ...</small>
+                    <span class="price">$ 24</span>
+                </div>
+                <div class="itemNameDiv">
+                    <span class="name">Keyboard</span>
+                    <div class="cartButton">
+                        <i class="uil uil-minus-circle icon"></i>
+                        <span>Browse</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="itemImage">
+                <img src="{{asset('Front/Images/keyboard2.png')}}" alt="Mice Image">
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- ===============Featured Items===================================== -->
+
+    <div class="featured section container" id="features">
+        <div class="sectionTop ">
+            <div class="introText ">
+                <h2 class="sectionTitle">
+                    Featured Gears
+                </h2>
+                <p> Here are some of the features items to enhace you gaming experience. You deserve  great gear for unforgattable experience!  </p>
+            </div>
+            <div class="cartButton" >
+                <i class="uil uil-minus-circle icon"></i>
+                <span>Browse</span>
+            </div>
+        </div>
+
+       <div class="sectionBody swiper">
+        <div class="swiper-wrapper">
+            <div class="sectionItem swiper-slide">
+                <div class="itemImageDiv">
+                    <img src="{{asset('Front/Images/earpod.png')}}" alt="Image">
+                </div>
+                <div class="itemDetails">
+                    <span class="name">Earpod</span>
+                    <small>Wireless</small>
+                    <span class="itemPrice">$ 69.01</span>
+                </div>
+                <div class="cartButton" id="itemToCart">
+                    <i class="uil uil-plus-circle icon"></i>
+                    <span>Add To Cart</span>
+                </div>
+            </div>
+            <div class="sectionItem swiper-slide">
+                <div class="itemImageDiv">
+                    <img src="{{asset('Front/Images/computer2.png')}}" alt="Image">
+                </div>
+                <div class="itemDetails">
+                    <span class="name">Laptop</span>
+                    <small>Gaming Laptop</small>
+                    <span class="itemPrice">$ 1,228</span>
+                </div>
+                <div class="cartButton" id="itemToCart">
+                    <i class="uil uil-plus-circle icon"></i>
+                    <span>Add To Cart</span>
+                </div>
+            </div>
+            <div class="sectionItem swiper-slide">
+                <div class="itemImageDiv">
+                    <img src="{{asset('Front/Images/keyboard.png')}}" alt="Image">
+                </div>
+                <div class="itemDetails">
+                    <span class="name">Moucepad</span>
+                    <small>Smooth rubber</small>
+                    <span class="itemPrice">$ 19.31</span>
+                </div>
+                <div class="cartButton" id="itemToCart">
+                    <i class="uil uil-plus-circle icon"></i>
+                    <span>Add To Cart</span>
+                </div>
+            </div>
+            <div class="sectionItem swiper-slide">
+                <div class="itemImageDiv">
+                    <img src="{{asset('Front/Images/gaming chair.png')}}" alt="Image">
+                </div>
+                <div class="itemDetails">
+                    <span class="name">Gaming Chair</span>
+                    <small>Extendable</small>
+                    <span class="itemPrice">$ 494.51</span>
+                </div>
+                <div class="cartButton" id="itemToCart">
+                    <i class="uil uil-plus-circle icon"></i>
+                    <span>Add To Cart</span>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+
+<!-- ========================New Gear================================ -->
+
+<div class="newGear section container" id="newgear">
+    <div class="sectionTop ">
+        <div class="introText ">
+            <h2 class="sectionTitle">
+                New Gears Collection
+            </h2>
+            <p> Here is the selection of the new and upgraded techno gear for your gaming 2022!  </p>
+        </div>
+        <div class="cartButton">
+            <i class="uil uil-minus-circle icon"></i>
+            <span id="moreBtn">More</span>
+        </div>
+    </div>
+
+    <div class="sectionBody grid" style="gap: 3rem;">
+        <div class="sectionItem">
+            <div class="itemImageDiv">
+                <img src="{{asset('Front/Images/cable.png')}}" alt="Image">
+            </div>
+            <div class="itemDetails">
+                <span class="name">USB Cables</span>
+                <small>original Black</small>
+                <span class="itemPrice">$ 19.01</span>
+            </div>
+            <div class="cartButton" id="itemToCart">
+                <i class="uil uil-plus-circle icon"></i>
+                <span>Add To Cart</span>
+            </div>
+        </div>
+        <div class="sectionItem ">
+            <div class="itemImageDiv">
+                <img src="{{asset('Front/Images/mic.png')}}" alt="Image">
+            </div>
+            <div class="itemDetails">
+                <span class="name">Microphone</span>
+                <small>Great Sound</small>
+                <span class="itemPrice">$ 428</span>
+            </div>
+            <div class="cartButton" id="itemToCart">
+                <i class="uil uil-plus-circle icon"></i>
+                <span>Add To Cart</span>
+            </div>
+        </div>
+        <div class="sectionItem ">
+            <div class="itemImageDiv">
+                <img src="{{asset('Front/Images/router.png')}}" alt="Image">
+            </div>
+            <div class="itemDetails">
+                <span class="name">WiFi Routers</span>
+                <small>Hight band width</small>
+                <span class="itemPrice">$ 109.31</span>
+            </div>
+            <div class="cartButton" id="itemToCart">
+                <i class="uil uil-plus-circle icon"></i>
+                <span>Add To Cart</span>
+            </div>
+        </div>
+        <div class="sectionItem ">
+            <div class="itemImageDiv">
+                <img src="{{asset('Front/Images/pad.png')}}" alt="Image">
+            </div>
+            <div class="itemDetails">
+                <span class="name">Gaming Pad</span>
+                <small>PS4 Wireless</small>
+                <span class="itemPrice">$ 494.51</span>
+            </div>
+            <div class="cartButton" id="itemToCart">
+                <i class="uil uil-plus-circle icon"></i>
+                <span>Add To Cart</span>
+            </div>
+        </div>
+    </div>
+    <div class="sectionBody toAddSection grid" id="hidden" style="gap: 3rem;">
+        <div class="sectionItem">
+            <div class="itemImageDiv">
+                <img src="{{asset('Front/Images/game1.png')}}" alt="Image">
+            </div>
+            <div class="itemDetails">
+                <span class="name">Gattling Gears</span>
+                <small>Windows Game</small>
+                <span class="itemPrice">$ 169.01</span>
+            </div>
+            <div class="cartButton" id="itemToCart">
+                <i class="uil uil-plus-circle icon"></i>
+                <span>Add To Cart</span>
+            </div>
+        </div>
+        <div class="sectionItem ">
+            <div class="itemImageDiv">
+                <img src="{{asset('Front/Images/game3.png')}}" alt="Image">
+            </div>
+            <div class="itemDetails">
+                <span class="name">Gears of War</span>
+                <small>Windows Game</small>
+                <span class="itemPrice">$ 128</span>
+            </div>
+            <div class="cartButton" id="itemToCart">
+                <i class="uil uil-plus-circle icon"></i>
+                <span>Add To Cart</span>
+            </div>
+        </div>
+        <div class="sectionItem ">
+            <div class="itemImageDiv">
+                <img src="{{asset('Front/Images/game4.png')}}" alt="Image">
+            </div>
+            <div class="itemDetails">
+                <span class="name">Metal Gear</span>
+                <small>Solid One</small>
+                <span class="itemPrice">$ 209.31</span>
+            </div>
+            <div class="cartButton" id="itemToCart">
+                <i class="uil uil-plus-circle icon"></i>
+                <span>Add To Cart</span>
+            </div>
+        </div>
+        <div class="sectionItem ">
+            <div class="itemImageDiv">
+                <img src="{{asset('Front/Images/game2.png')}}" alt="Image">
+            </div>
+            <div class="itemDetails">
+                <span class="name">Metal Gear </span>
+                <small>Solid Two</small>
+                <span class="itemPrice">$ 294.51</span>
+            </div>
+            <div class="cartButton" id="itemToCart">
+                <i class="uil uil-plus-circle icon"></i>
+                <span>Add To Cart</span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+<!-- =====================Test Players ============================== -->
+<div class="playerSection section grid container" id="test">
+    <div class="ItemCard ">
+        <div class="cardText">
+            <div class="cardPrice">
+                <small>Video test of gaming gears</small>
+              
+            </div>
+            <div class="itemNameDiv">
+                <span class="name">Gear Tests by ProGammers </span>
+                <div class="cartButton">
+                    <i class="uil uil-minus-circle icon"></i>
+                    <span>watch vedios</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="itemImage">
+            <img src="{{asset('Front/Images/g1.png')}}" alt="Player Image" class="blackImage" >
+        </div>
+    </div>
+    <div class="ItemCard ">
+        <div class="cardText">
+            <div class="cardPrice">
+                <small>Tricky tips in CS,GO and Dota 2</small>
+            
+            </div>
+            <div class="itemNameDiv">
+                <span class="name">Game Tips <br>Thanks to Pros</span>
+                <div class="cartButton">
+                    <i class="uil uil-minus-circle icon"></i>
+                    <span>watch vedios</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="itemImage">
+            <img src="{{asset('Front/Images/g2.png')}}" alt="Mice Image" class="redImage" >
+        </div>
+    </div>
+    <div class="contactDiv ">
+        <div class="divLeft">
+            <h2 class="title">Newsletter</h2>
+            <input type="text" placeholder="ENTER YOUR E-MAIL">
+        </div>
+        <div class="divRight">
+            <small>Subscribe to not miss any od promotions or our new videos with gamers</small>
+            <div class="cartButton">
+                <i class="uil uil-plus-circle icon"></i>
+                <span>subscribe</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="footer">
+    {% block footer %}
+    <div class="footerSection  container">
+        <div class="containerLeft grid">
+            <div class="socialIcons grid">
+                <i class="uil uil-facebook-f icon"></i>
+                <i class="uil uil-instagram icon"></i>
+                <i class="uil uil-twitter icon"></i>
+                <i class="uil uil-youtube icon"></i>
+            </div>
+            <div class="textList grid">
+                <span>Mouses</span>
+                <span>Keyboards</span>
+                <span>Mousepads</span>
+                <span>Headsets</span>
+            </div>
+            <div class="textList grid">
+                <span>Computers</span>
+                <span>Accesories</span>
+                <span>Bags</span>
+                <span>Consoles</span>
+            </div>
+            <div class="textList grid">
+                <span>Register</span>
+                <span>Login</span>
+                <span>About</span>
+                <span>FAQs</span>
+            </div>
+            <div class="textList grid">
+                <span>Contact Us</span>
+                <span>Warranty Policy</span>
+                <span>Terms of Use</span>
+                <span>Affiliations</span>
+            </div>
+        </div>
+        <div class="containerRight">
+            <p>Good-quality video games offer lots of benefits to children and teens. ..increase children's self-confidence and self-esteem as they master games. provide points of common interest and opportunities for socialization. develop skills in reading, math, technology and problem-solving.</p>
+            <div class="contactNumber">
+                <span class="title">Contact Support</span>
+                <span class="number">+216 53 140 939</span>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="footerBottomSection container">
+      <small>Copyright &copy; TheAces 2022. All rights registered</small>
+      <div class="footerLogo">
+        TheAces
+      </div>
+    </div>
+    {% endblock %}
+</div>
+
+<div class="cart" id="cartDiv" >
+    <div class="cartItem">
+        <div class="closeIconDiv" id="closeCartIcon">
+            <i class="uil uil-times-circle icon closeIcon"></i>
+           </div>
+        <div class="cartTitle">
+            <h2>Empty Cart.. </h2>
+        </div>
+       <div class="itemsAdded" id="itemsInCart">
+       </div>
+
+       <div class="paymentDiv">
+        <div class="divDetails">
+            <div class="paymentTitle">
+                <h2>Card details </h1>
+            </div>
+            <span>SELECT CARD TYPE</span>
+        <img src="{{asset('Front/Images/payments.png')}}" alt="Payment method">
+
+        <form action="">
+            <input type="number" placeholder="card number">
+            <div class="date__CVV">
+              <div>
+                <label for="date">expiry date</label>
+                <input type="date" id="date">
+              </div>
+              <div>
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="enter your 3 digits">
+              </div>
+
+            </div>
+            <button type="submit">CHECKOUT</button>
+        </form>
+        </div>
+        <div class="paymentFooter">
+            <p>We deliver immersive virtual reality experirnce that eencourages learnig, crativity and play at transport hubs,select retail and signficant venues. </p>
+        </div>
+    </div>
+    </div>
+
+    
+</div>
+
+    {% block js %}
+    <script src="{{asset('Front/swiper-bundle.min.js')}}"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="{{asset('Front/main.js')}}"></script>
+
+    {% endblock %}
+    {% endblock %}
+</body>
+</html>
