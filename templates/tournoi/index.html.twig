@@ -1,10 +1,9 @@
-<!DOCTYPE html>
+{% include 'baseBack.html.twig'%}
 
-<title>Tournoi index</title>
+{% block content1 %}
 
-{% block body %}
-    <h1>Tournoi index</h1>
-
+<div class="row" style="margin-left:20%">
+<h1>Les tournois </h1>
     <table class="table">
         <thead>
             <tr>
@@ -43,4 +42,5 @@
     </table>
 
     <a href="{{ path('tournoi_new') }}">Create new</a>
+    </div>
 {% endblock %}

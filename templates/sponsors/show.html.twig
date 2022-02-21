@@ -1,8 +1,10 @@
+{% include 'baseBack.html.twig'%}
 <!DOCTYPE html>
 
 <title>Sponsors</title>
 
-{% block body %}
+{% block content1 %}
+<div class="row" style="margin-left:20%">
     <h1>Sponsors</h1>
 
     <table class="table">
@@ -27,4 +29,6 @@
     <a href="{{ path('sponsors_edit', {'id': sponsor.id}) }}">edit</a>
 
     {{ include('sponsors/_delete_form.html.twig') }}
+
+    </div>
 {% endblock %}
