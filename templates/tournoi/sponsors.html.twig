@@ -1,0 +1,12 @@
+     {% for Sponsor in sponsors %}
+
+
+                    <td>{{ Sponsor.id }}</td>
+                    <td>{{ Sponsor.name }}</td>
+                    <td>{{ Sponsor.logo}}</td>
+                    <td> <a href="{{path('sponsors_edit',{'id':Sponsor.id})}}"> modifier</td>
+                    <td> <a href="{{path('sponsors_delete',{'id':Sponsor.id})}}"> Supprimer</td>
+
+
+                    </tr>
+                {% endfor%}
